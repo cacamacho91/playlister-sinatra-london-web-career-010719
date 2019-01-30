@@ -1,2 +1,8 @@
-# Add seed data here. Seed your database with `rake db:seed`
+#wipe DB before seeding
+Artist.destroy_all
+Song.destroy_all
+SongGenre.destroy_all
+Genre.destroy_all
 
+#parse files into db
+LibraryParser.parse
