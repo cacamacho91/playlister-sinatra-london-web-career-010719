@@ -1,0 +1,15 @@
+<h1>📁 All Genres 📁</h1>
+
+<a href="/">
+  🏠 Back to Home Menu
+</a>
+
+<% @genres.each do |genre| %>
+
+<ul>
+  <a href="/genres/<%=genre.slug%>">
+    <%= genre.name %>
+  </a>
+</ul>
+
+<% end %>

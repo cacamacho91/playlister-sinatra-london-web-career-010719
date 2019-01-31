@@ -1,0 +1,21 @@
+<h1>🎵 All Songs 🎵</h1>
+
+<a href="/">
+  🏠 Back to Home Menu
+</a>
+
+<br/>
+
+<a href="/songs/new">
+ ➕ Create New Song
+</a>
+
+<% @songs.each do |song| %>
+
+<ul>
+  <a href="/songs/<%=song.slug%>">
+    <%= song.name %>
+  </a>
+</ul>
+
+<% end %>

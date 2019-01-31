@@ -1,0 +1,15 @@
+<h1> 🎨 Artists 🎨 </h1>
+
+<a href="/">
+  🏠 Back to Home Menu
+</a>
+
+<% @artists.each do |artist| %>
+
+<ul>
+  <a href="/artists/<%=artist.slug%>">
+    <%= artist.name %>
+  </a>
+</ul>
+
+<% end %>
